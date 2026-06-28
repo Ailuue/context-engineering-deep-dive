@@ -1,0 +1,20 @@
+# Secrets
+.env
+
+# Capstone's persisted long-term memory (created at runtime)
+.ctx_memory.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
