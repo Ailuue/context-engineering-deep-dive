@@ -267,7 +267,7 @@ def generate(system: str, messages: list[dict], *, max_tokens: int = 512) -> str
         resp = _openai_client().chat.completions.create(
             model=_OPENAI_CHAT,
             max_tokens=max_tokens,
-            messages=[{"role": "system", "content": system}, *messages],
+            messages=[{"role": "system", "content": system}, *messages],  # type: ignore[arg-type]
         )
         return resp.choices[0].message.content or ""
     if p == "claude":
